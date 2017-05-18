@@ -2,12 +2,12 @@
 #include <string.h>
 
 void convertToUpperCase(const char* source, char * destination){
-    // for loop counter
+    // For Loop counter
     int i;
-    // size of the source string
+    // Size of the source string
     size_t length = strlen(source);
 
-    // loop through every character
+    // Loop through every character
     for (i=0; i<length; i++){
 
         // Get every character to a temporary char variable
@@ -24,14 +24,14 @@ void convertToUpperCase(const char* source, char * destination){
                     hence 'd' should decrease by 32
 
                     therefore:
-                        temp = temp -32
+                        temp = temp - 32
             */
             temp = temp - 32;
             // Add the character to the destination
             destination[i] = temp;
         }
         else{
-            // if its not a simple letter then just put it to the destination
+            // If its not a simple letter then just put it to the destination
             destination[i] = temp;
         }
     }
